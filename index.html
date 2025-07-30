@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>来华留学生跨文化知识与技能测试</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .test-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #d32f2f;
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #d32f2f;
+            padding-bottom: 10px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section-title {
+            font-weight: bold;
+            color: #d32f2f;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .options {
+            margin-left: 20px;
+        }
+        .option {
+            margin-bottom: 8px;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            min-height: 80px;
+            margin-top: 10px;
+        }
+        button {
+            background-color: #d32f2f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            display: block;
+            margin: 30px auto;
+        }
+        button:hover {
+            background-color: #b71c1c;
+        }
+        .result {
+            display: none;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            border-left: 5px solid #d32f2f;
+        }
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+            color: #d32f2f;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .feedback {
+            margin-top: 20px;
+        }
+        .timer {
+            text-align: right;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>来华留学生跨文化知识与技能测试</h1>
+        <div class="timer">时间：30分钟 | 总分：100分</div>
+        
+        <div class="section">
+            <div class="section-title">一、选择题（每题4分，共40分）</div>
+            
+            <div class="question">
+                1. 中国传统的"孝道"文化最直接体现在以下哪个节日？
+                <div class="options">
+                    <div class="option"><input type="radio" name="q1" value="A"> A. 元宵节</div>
+                    <div class="option"><input type="radio" name="q1" value="B"> B. 清明节</div>
+                    <div class="option"><input type="radio" name="q1" value="C"> C. 中秋节</div>
+                    <div class="option"><input type="radio" name="q1" value="D"> D. 端午节</div>
+                </div>
+            </div>
+            
+            <div class="question">
+                2. 与中国朋友初次见面时，最得体的问候方式是？
+                <div class="options">
+                    <div class="option"><input type="radio" name="q2" value="A"> A. 拥抱</div>
+                    <div class="option"><input type="radio" name="q2" value="B"> B. 握手并微笑</div>
+                    <div class="option"><input type="radio" name="q2" value="C"> C. 双手合十</div>
+                    <div class="option"><input type="radio" name="q2" value="D"> D. 拍对方肩膀</div>
+                </div>
+            </div>
+            
+            <div class="question">
+                3. 在中国商务场合，递名片时应如何表示尊重？
+                <div class="options">
+                    <div class="option"><input type="radio" name="q3" value="A"> A. 单手随意递出</div>
+                    <div class="option"><input type="radio" name="q3" value="B"> B. 双手递出，字朝向对方</div>
+                    <div class="option"><input type="radio" name="q3" value="C"> C. 用左手递出</div>
+                    <div class="option"><input type="radio" name="q3" value="D"> D. 将名片放在桌上推过去</div>
+                </div>
+            </div>
+            
+            <div class="question">
+                4. 以下哪种行为在中国餐桌上可能被视为不礼貌？
+                <div class="options">
+                    <div class="option"><input type="radio" name="q4" value="A"> A. 为他人夹菜</div>
+                    <div class="option"><input type="radio" name="q4" value="B"> B. 筷子竖插在饭上</div>
+                    <div class="option"><input type="radio" name="q4" value="C"> C. 长辈先动筷</div>
+                    <div class="option"><input type="radio" name="q4" value="D"> D. 使用公筷</div>
+                </div>
+            </div>
+            
+            <div class="question">
+                5. 中国人常说"入乡随俗"，体现了跨文化交流中的哪种态度？
+                <div class="options">
+                    <div class="option"><input type="radio" name="q5" value="A"> A. 文化优越感</div>
+                    <div class="option"><input type="radio" name="q5" value="B"> B. 文化适应</div>
+                    <div class="option"><input type="radio" name="q5" value="C"> C. 文化排斥</div>
+                    <div class="option"><input type="radio" name="q5" value="D"> D. 文化批判</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">二、情景分析题（每题15分，共30分）</div>
+            
+            <div class="question">
+                1. 情景：你的中国同学邀请你周末去他家吃饭，饭后他母亲坚持要帮你盛饭，尽管你已经吃饱。此时你会如何回应？请说明理由。
+                <textarea name="q6" placeholder="请在此输入你的回答..."></textarea>
+            </div>
+            
+            <div class="question">
+                2. 情景：小组讨论时，一位中国同学没有直接反对你的观点，而是说"可能还有别的办法"。这反映了哪种中国沟通特点？你该如何应对？
+                <textarea name="q7" placeholder="请在此输入你的回答..."></textarea>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">三、实践技能题（30分）</div>
+            <div class="question">
+                任务：设计一份"文化适应小指南"（中英文皆可），包含以下内容：
+                <ol>
+                    <li>2条中国社交禁忌（如送礼、称呼等）；</li>
+                    <li>1个你在华遇到的文化冲突案例及解决方法；</li>
+                    <li>向其他留学生推荐1个快速适应中国文化的建议。</li>
+                </ol>
+                <textarea name="q8" placeholder="请在此输入你的回答..."></textarea>
+            </div>
+        </div>
+        
+        <button onclick="calculateScore()">提交并查看分数</button>
+        
+        <div id="result" class="result">
+            <div class="score">你的得分是：<span id="totalScore">0</span>/100</div>
+            <div class="feedback">
+                <h3>参考答案：</h3>
+                <p><strong>选择题答案：</strong> 1.B 2.B 3.B 4.B 5.B</p>
+                <p><strong>情景题参考：</strong></p>
+                <p>1. 可以礼貌接受少量饭菜表示感谢，或委婉解释"我已经吃得很饱了，但非常感谢您的热情"。这体现了对中国长辈好客文化的尊重。</p>
+                <p>2. 反映了中国人"委婉表达不同意见"的沟通特点。可以主动询问"您有什么建议吗？"以促进更开放的讨论。</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function calculateScore() {
+            // 计算选择题分数
+            let score = 0;
+            const correctAnswers = {
+                q1: "B", q2: "B", q3: "B", q4: "B", q5: "B"
+            };
+            
+            for (let i = 1; i <= 5; i++) {
+                const selected = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selected && selected.value === correctAnswers[`q${i}`]) {
+                    score += 4;
+                }
+            }
+            
+            // 情景题和实践题基础分（根据是否填写）
+            if (document.querySelector('textarea[name="q6"]').value.trim() !== "") {
+                score += 10; // 基础分10分
+            }
+            if (document.querySelector('textarea[name="q7"]').value.trim() !== "") {
+                score += 10; // 基础分10分
+            }
+            if (document.querySelector('textarea[name="q8"]').value.trim() !== "") {
+                score += 20; // 基础分20分
+            }
+            
+            // 显示结果
+            document.getElementById('totalScore').textContent = score;
+            document.getElementById('result').style.display = 'block';
+            
+            // 滚动到结果
+            document.getElementById('result').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
